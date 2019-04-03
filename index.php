@@ -1,11 +1,11 @@
 <?php
 
-require 'Task.php';
+require 'Name.php';
 require 'functions.php';
 
 $pdo = connectToDb();
 
-$tasks = fetchAllTasks($pdo);
+$names = fetchAllNames($pdo);
 
 
 require 'index.view.php';

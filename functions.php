@@ -5,17 +5,17 @@ function connectToDb()
 
 try {
 
-  return new PDO('mysql:host=127.0.0.1:8889; dbname=mytodo', 'root', 'root');
+  return new PDO('mysql:host=localhost; dbname=daniell9_testing', 'daniell9_testing', 'DBA2019');
   
 } catch (PDOException $e) {
   die($e->getMessage());
 }
 }
 
-function fetchAllTasks($pdo)
+function fetchAllNames($pdo)
 {
 
-$statement = $pdo->prepare('select * from todos');
+$statement = $pdo->prepare('select * from personnel');
 
 $statement->execute();
 

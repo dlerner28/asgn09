@@ -9,14 +9,10 @@
   <body>
     
     <ul>
-    <?php foreach ($tasks as $task) : ?>
+    <?php foreach ($names as $name) : ?>
     <li>
-    <?php if($task->completed): ?>
     
-      <strike><?= $task->description; ?></strike>
-      <?php else: ?>
-      <?= $task->description; ?>
-      <?php endif; ?>
+      <?= $name->firstName ".$name->lastName."; ?>
       <?php endforeach; ?>
       </li>
     
