@@ -9,26 +9,13 @@
   <body>
     
     <ul>
-<<<<<<< HEAD
 
-      <?php foreach($tasks as $task) : ?>
-       <li>
-
-        <?php if($task->completed) : ?>
-
-        <strike><?= $task->description; ?></strike 
-          <?php else: ?>
-
-          <?= $task->description; ?>
-        <?php endif; ?>
-
-      </li>
-=======
     <?php foreach ($names as $name) : ?>
     <li>
     
-      <?= $name->firstName ".$name->lastName."; ?>
->>>>>>> 13-pdo
+      <?= $name->firstName; ?>
+      <?= $name->lastName; ?>
+
       <?php endforeach; ?>
       </li>
     
